@@ -17,8 +17,8 @@ jobs:
         username: ${{ github.actor }}
         password: ${{ secrets.n1ccc }}
     - name: Build the Docker image
-      run: docker build . -f Dockerfile -t ghcr.io/n1ccc/cors-unraid-proxy/cors-unraid-proxy:latest 
+      run: docker build . -f Dockerfile -t ghcr.io/n1ccc/cors-unraid-proxy:latest 
     - name: List docker images
       run: docker images
     - name: Push Docker Image
-      run: docker push ghcr.io/n1ccc/cors-unraid-proxy/cors-unraid-proxy:latest 
+      run: docker push ghcr.io/n1ccc/cors-unraid-proxy:latest 
