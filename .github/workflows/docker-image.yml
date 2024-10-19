@@ -20,7 +20,5 @@ jobs:
       run: docker build . -f Dockerfile -t ghcr.io/n1ccc/cors-unraid-proxy/cors-unraid-proxy-docker:latest 
     - name: List docker images
       run: docker images
-    - name: Run Docker
-      run: docker run ghcr.io/n1ccc/cors-unraid-proxy/cors-unraid-proxy-docker:latest 
     - name: Push Docker Image
       run: docker push ghcr.io/n1ccc/cors-unraid-proxy/cors-unraid-proxy:latest 
