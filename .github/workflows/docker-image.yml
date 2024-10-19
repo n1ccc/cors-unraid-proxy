@@ -19,4 +19,4 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag cors-unraid-proxy:$(date +%s)
     - name: Push Docker Image
-      run: docker push ghcr.io/${{ github.repository }}/cors-unraid-proxy:latest
+      run: docker push cors-unraid-proxy:latest
